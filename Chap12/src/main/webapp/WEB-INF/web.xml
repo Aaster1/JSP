@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Chap12</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!-- AuthenFilter -->
+  <filter>
+  	<filter-name>filter01</filter-name>
+  	<filter-class>filter.AuthenFilter</filter-class>		<!--class는 .으로 경로잡기-->
+  </filter>
+  <filter-mapping>
+  	<filter-name>filter01</filter-name>
+  	<url-pattern>/filter01_pro.jsp</url-pattern>		<!-- filter01_pro로 넘어가는 모든 요청을 싸잡아 진행한다. -->
+  	<!-- /board 경로 아래의 모든 jsp에 매핑-->
+  	<!-- :.../board/*.jsp-->
+  </filter-mapping>
+  
+  <!-- InitParamFilter -->
+  <!-- 관리자의 계정을 설정할 때 사용하기 좋음-->
+  <filter>
+  	<filter-name>filter02</filter-name>
+  	<filter-class>filter.InitParamFilter</filter-class>		<!--class는 .으로 경로잡기-->
+  	<init-param>
+  		<param-name>param1</param-name>
+  		<param-value>admin</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>param2</param-name>
+  		<param-value>1234</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>filter02</filter-name>
+  	<url-pattern>/filter02_pro.jsp</url-pattern>		<!-- filter01_pro로 넘어가는 모든 요청을 싸잡아 진행한다. -->
+  	<!-- /board 경로 아래의 모든 jsp에 매핑-->
+  	<!-- :.../board/*.jsp-->
+  </filter-mapping>
+ 
+</web-app>
