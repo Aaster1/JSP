@@ -10,6 +10,7 @@
 	int result = productDAO.deleteProduct(productId);
 	
 	if(result==0){
+		
 		%>
 		
 		<%@ include file="./product.jsp"%>

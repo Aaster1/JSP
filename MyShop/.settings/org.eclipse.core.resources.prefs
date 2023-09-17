@@ -1,2 +1,13 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/buyConfirm.jsp=UTF-8
+encoding//src/main/webapp/piece_adminSessionCreate.jsp=UTF-8
+encoding//src/main/webapp/piece_buy.jsp=UTF-8
+encoding//src/main/webapp/piece_cart.jsp=UTF-8
+encoding//src/main/webapp/piece_cartDelProduct.jsp=UTF-8
+encoding//src/main/webapp/piece_ifSessionAdmin.jsp=UTF-8
+encoding//src/main/webapp/piece_listOrder.jsp=UTF-8
+encoding//src/main/webapp/piece_login_pro.jsp=UTF-8
+encoding//src/main/webapp/piece_productAddCart.jsp=UTF-8
+encoding//src/main/webapp/piece_sessionValidTime.jsp=UTF-8
+encoding//src/main/webapp/piece_signUp_pro.jsp=UTF-8
 encoding/<project>=UTF-8
