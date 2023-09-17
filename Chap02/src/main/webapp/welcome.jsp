@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 	선언문 -->
+	<!-- 	변수 선언이나 메소드를 정의하는 자바 코드 작성 -->
+
+	<%!String greeting = "환영합니다~!";
+	String tagline = "Welcome To Web Page~!";%>
+
+	<!-- 표현문 -->
+	<!-- 	변수 접근, 수식 계산, 메소드 호출 등의 자바 코드 작성 -->
+	<h1><%=greeting%></h1>
+	<h3><%=tagline%></h3>
+
+</body>
+</html>
